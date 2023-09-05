@@ -10,8 +10,8 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest"
-		
+		"test:unit": "vitest",
+		"vercel-post-build": "prisma migrate deploy"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
